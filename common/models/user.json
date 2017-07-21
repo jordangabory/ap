@@ -1,0 +1,94 @@
+{
+  "name": "user",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "required": true,
+      "isArray": false,
+      "updateResource": {
+        "id": "common.user.id",
+        "modelId": "common.user",
+        "facetName": "common",
+        "name": "id",
+        "type": "number",
+        "isId": true,
+        "required": true,
+        "isArray": false
+      },
+      "$promise": {},
+      "$resolved": true
+    },
+    "name": {
+      "type": "string",
+      "required": false,
+      "updateResource": {
+        "id": "common.user.name",
+        "modelId": "common.user",
+        "facetName": "common",
+        "name": "name",
+        "type": "string",
+        "required": false
+      },
+      "$promise": {},
+      "$resolved": true
+    },
+    "address": {
+      "type": "string",
+      "required": false,
+      "updateResource": {
+        "id": "common.user.address",
+        "modelId": "common.user",
+        "facetName": "common",
+        "name": "address",
+        "type": "string",
+        "required": false
+      },
+      "$promise": {},
+      "$resolved": true
+    },
+    "age": {
+      "type": "string",
+      "required": false,
+      "updateResource": {
+        "id": "common.user.age",
+        "modelId": "common.user",
+        "facetName": "common",
+        "name": "age",
+        "type": "string",
+        "required": false
+      },
+      "$promise": {},
+      "$resolved": true
+    },
+    "phone": {
+      "type": "string",
+      "required": false,
+      "updateResource": {
+        "id": "common.user.phone",
+        "modelId": "common.user",
+        "facetName": "common",
+        "name": "phone",
+        "type": "string",
+        "required": false
+      },
+      "$promise": {},
+      "$resolved": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "userFriends": {
+      "type": "hasMany",
+      "model": "user_friend",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

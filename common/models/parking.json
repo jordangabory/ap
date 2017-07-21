@@ -1,0 +1,32 @@
+{
+  "name": "parking",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "parking_id": {
+      "type": "number",
+      "id": true,
+      "required": true,
+      "isArray": false
+    },
+    "parking_name": {
+      "type": "string",
+      "required": false
+    },
+    "parking_geo": {
+      "type": "geopoint",
+      "required": false
+    },
+    "parking_boolean": {
+      "type": "boolean",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

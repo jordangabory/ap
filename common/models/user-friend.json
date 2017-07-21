@@ -1,0 +1,34 @@
+{
+  "name": "user_friend",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "relation_users": {
+      "type": [
+        "number"
+      ],
+      "required": false,
+      "isArray": true,
+      "updateResource": {
+        "id": "common.user_friend.relation_users",
+        "modelId": "common.user_friend",
+        "facetName": "common",
+        "name": "relation_users",
+        "type": [
+          "number"
+        ],
+        "required": false,
+        "isArray": true
+      },
+      "$promise": {},
+      "$resolved": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
